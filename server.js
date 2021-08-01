@@ -6,6 +6,7 @@ const path = require("path");
 const PORT = process.env.PORT || 3002;
 
 app.use(express.json()); 
+app.use(express.static(path.join(__dirname, "client", "build")));
 
 
 // send all other requests to index.html so react takes over
