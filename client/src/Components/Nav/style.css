@@ -1,0 +1,139 @@
+/* container of the navbar */
+header {
+  color: white;
+  position: fixed;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  /* background-color: #06101f; */
+  background-color: #121618;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+/* github and linked icon */
+.icon {
+  font-size: 50px;
+  color: white;
+  transition: color .2s ease-in;
+}
+.icon:hover {
+  color: #418df1;
+}
+.icon:first-child {
+  margin-right: 30px;
+}
+
+
+
+/* links */
+li {
+  list-style: none;
+}
+
+
+
+.picture-name-container {
+  position:relative;
+}
+
+.picture-name-container::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: url("./monterey.jpg");
+  background-position: center;
+  background-size: cover;
+  filter: blur(1.5px) grayscale(100%)
+}
+
+.picture-name-container-inside {
+  position: relative;
+}
+
+/* my Name */
+#nav-name {
+  color: rgb(231, 231, 231);
+  font-size: 24px;
+  font-weight: lighter;
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  
+}
+/* nav circular photo */
+#nav-photo {
+  display: block;
+  margin-top: 20px;
+  width: 110px;
+  border-radius: 50%;
+  margin: 30px auto 20px auto;
+  filter: grayscale(30%);
+} 
+
+
+
+nav {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+
+
+/* places svg and link together */
+.nav-links {
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  padding-bottom: 17px;
+  padding-top: 17px;
+  transition: background-color .2s ease-in;
+  /* width: 200px; */
+  border-radius: 2px;
+  cursor: pointer;
+  border-bottom: 1px solid rgb(45, 47, 49);
+  font-size: 15px;
+}
+
+.nav-links:first-of-type {
+  border-top: 1px solid rgb(45, 47, 49);
+}
+
+.nav-links:hover {
+  background-color: #418df1;
+}
+
+.nav-links svg {
+  margin-right: 20px;
+  /* font-size: 15px; */
+}
+
+
+/* div holding github and linked in icons */
+.nav-icon-links {
+  /* grow to fill nav container  */
+  margin-top: 30px;
+  flex: 1 1;
+  
+  /* put at end of container */
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+
+
+
+/* 1200 */
+@media only screen and (max-width: 1200px) {
+  header {
+    width: 225px;
+  }
+
+}

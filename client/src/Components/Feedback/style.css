@@ -1,0 +1,5 @@
+#feedback {
+  transition: opacity .4s ease-in-out;
+  margin-top: 10px;
+  font-family: 'Titillium Web', sans-serif;
+}

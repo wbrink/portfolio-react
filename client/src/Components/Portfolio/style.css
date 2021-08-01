@@ -1,0 +1,154 @@
+.project {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 40%;
+  margin-bottom: 50px;
+  border: 3px solid #3B3C3E;
+  border-radius: 3px;
+  background-color: #303133;
+  box-shadow: 2px 2px 7px 2px rgb(115, 119, 122);
+  /* border-top: 10px solid silver; */
+}
+
+
+/* setup the browser top bar */
+.project::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -3px;
+  width: 100%;
+  background-color: #3B3C3E;
+  border-left: 3px solid #3B3C3E;
+  border-right: 3px solid #3B3C3E;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  height: 15px;
+  box-shadow: 0px 1px 2px black;
+}
+
+.red {
+  position: absolute;
+  top: -11px;
+  left: 3px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #EE665A;
+}
+
+.yellow {
+  position: absolute;
+  top: -11px;
+  left: 18px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #E0BF4C;
+}
+
+.grey {
+  position: absolute;
+  top: -11px;
+  left: 33px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #636466;
+}
+
+.project-image {
+  padding: 10px;
+  width: 100%;
+  background-color: #303133;
+  transition: background-color .2s ease;
+  overflow: hidden;
+}
+
+.project-image img {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+  cursor: pointer;
+  transition: all .3s ease-out;
+  
+}
+
+
+.project-image:hover img {
+  transform: scale(1.1);
+}
+
+
+.project-info {
+  background-color: #303133;
+  color: white;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: lighter;
+  font-size: 13px;
+  letter-spacing: 2px;
+  padding: 10px 15px 20px 15px;
+}
+
+.project-info a {
+  text-decoration: none;
+  color: white;
+  border: 1px white solid;
+  padding: 4px;
+  border-radius: 3px;
+
+}
+
+.project-info a:hover {
+  text-decoration: none;
+  color: white;
+  border: 1px white solid;
+  padding: 4px;
+  border-radius: 3px;
+
+}
+
+
+.demo-credentials {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 160px;
+  margin: auto;
+}
+
+
+
+.container-2 {
+  padding: 60px 30px 150px 30px;
+  /* background-color: rgb(214, 214, 214); */
+  background-color: white;
+  border-bottom: 1px black;
+  margin-bottom: 25px;
+}
+
+
+@media only screen and (min-width: 701px) and  (max-width: 1200px) {
+  .project {
+    flex-basis: 47%;
+  }
+
+  /* .project:nth-child(odd) {
+    margin-right: 20px;
+  } */
+}
+
+@media only screen and (max-width: 700px) {
+  .project {
+    flex-basis: 100%;
+  }
+
+  .container-2 {
+    padding: 50px 20px 70px 20px;
+  }
+}
+
+

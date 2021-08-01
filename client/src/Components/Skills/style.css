@@ -1,0 +1,33 @@
+.icon-container {
+  margin-top: 80px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+  font-size: 6rem;
+}
+
+.icon-container i {
+  flex-basis: 140px;
+  margin-bottom: 30px;
+  transition: color .2s ease-in;
+}
+
+
+.icon-container i:hover {
+  color: #0C91DF;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .icon-container {
+    margin-top: 50px;
+    font-size: 4rem;
+    justify-content: space-evenly;
+  }
+
+  .icon-container i {
+    flex-basis: 80px;
+  }
+}

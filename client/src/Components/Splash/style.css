@@ -1,0 +1,125 @@
+.splash {
+  height: 70vh;
+  background-image: url("./mac1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  min-height: 480px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*  */
+#splash-title {
+  color: white;
+  font-size: 2rem;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+
+#splash-subtitle {
+  color: white;
+  font-size: 3rem;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+/* holds the viewportfolio and view resume */
+.splash-links-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.splash-link {
+  font-family: 'Titillium Web', sans-serif;
+  text-align: center;
+  padding: 10px;
+  min-width: 150px;
+  background-color: rgb(130, 140, 143);
+  color: black;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  transition: background-color .2s ease-in, color .5s ease-in;
+}
+
+.splash-link:hover {
+  background-color: #3485f0e1;
+  color: white;
+}
+
+.splash-link:active {
+  background-color: #3485f0e1;
+  color: white;
+}
+
+.splash-link:first-child {
+  margin-right: 15px;
+}
+
+.social-icons {
+  margin-top: 70px;
+  display: none;
+}
+
+@media only screen and (max-width: 899px) {
+  /* show the github and linked links */
+  .social-icons {
+    display: block;
+  }
+
+  /* dont show name on mobile */
+  #splash-title {
+    display: none;
+  }
+
+  #splash-subtitle {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+    margin-top: 100px;
+  }
+
+}
+
+
+@media only screen and (max-width: 700px) {
+
+  #splash-subtitle {
+    margin-bottom: 30px;
+  }
+
+  .splash-link {
+    padding: 5px;
+  }
+
+  .splash-links-container {
+    flex-direction: column;
+  }
+
+  .splash-link:first-child {
+    margin-right: 0px;
+    margin-bottom: 15px;
+  }
+
+}
